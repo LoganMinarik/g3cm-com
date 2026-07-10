@@ -2,9 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G3 C&M — Indie Animation & Game Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="html/css/index.css">
 </head>
 <body>
 
+<header>
+    <div class="container header-inner">
+        <div class="logo">G3 <span>C&amp;M</span></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="nav-panel" id="navPanel">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#roster" class="nav-link">Roster</a>
+    <a href="#streams" class="nav-link">Streams</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
+<main>
+    <!-- Hero -->
+    <section id="home">
+        <div class="container hero-content">
+            <h1>G3 <span>C&amp;M</span></h1>
+            <p class="tagline">Indie Animation &amp; Game Development Freelancing</p>
+            <p>
+                We bring characters and worlds to life through 3D CGI animation and game development.
+                From concept to final render — let's build something unforgettable.
+            </p>
+            <div class="hero-links">
+                <a href="#roster">View Roster</a>
+                <a href="#streams">Watch Live</a>
+                <a href="#contact">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roster -->
+    <section id="roster">
+        <div class="container">
+            <h2 class="section-title">Character Roster</h2>
+            <p class="section-sub">
+                Characters I am legally licensed to animate. Click a card to learn more.
+            </p>
+            <div class="roster-grid">
+                <div class="character-card">
+                    <div class="img-placeholder">01</div>
+                    <div class="card-body">
+                        <h3>Character Name</h3>
+                        <p>Short description of the character and their role goes here.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="img-placeholder">02</div>
+                    <div class="card-body">
+                        <h3>Character Name</h3>
+                        <p>Short description of the character and their role goes here.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="img-placeholder">03</div>
+                    <div class="card-body">
+                        <h3>Character Name</h3>
+                        <p>Short description of the character and their role goes here.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="img-placeholder">04</div>
+                    <div class="card-body">
+                        <h3>Character Name</h3>
+                        <p>Short description of the character and their role goes here.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="img-placeholder">05</div>
+                    <div class="card-body">
+                        <h3>Character Name</h3>
+                        <p>Short description of the character and their role goes here.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="img-placeholder">06</div>
+                    <div class="card-body">
+                        <h3>Character Name</h3>
+                        <p>Short description of the character and their role goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Streams -->
+    <section id="streams">
+        <div class="container">
+            <h2 class="section-title">Find Me On</h2>
+            <p class="section-sub">
+                Catch me live, support the work, or follow along.
+            </p>
+            <div class="streams-grid">
+                <a href="#" class="stream-card" target="_blank" rel="noopener">
+                    <span class="icon">&#9654;</span>
+                    <span>Twitch.tv</span>
+                </a>
+                <a href="#" class="stream-card" target="_blank" rel="noopener">
+                    <span class="icon">&#9673;</span>
+                    <span>Kick.com</span>
+                </a>
+                <a href="#" class="stream-card" target="_blank" rel="noopener">
+                    <span class="icon">&#9829;</span>
+                    <span>Patreon</span>
+                </a>
+                <a href="#" class="stream-card" target="_blank" rel="noopener">
+                    <span class="icon">&#9733;</span>
+                    <span>SubscribeStar</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-sub">
+                Want to work together or just say hi? Reach out anytime.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:hello@g3cm.com">hello@g3cm.com</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        &copy; 2026 G3 C&amp;M LLC. All rights reserved.
+    </div>
+</footer>
+
+<script src="html/js/index.js"></script>
 </body>
 </html>
