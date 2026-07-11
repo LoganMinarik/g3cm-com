@@ -30,3 +30,18 @@ navOverlay.addEventListener('click', closeNav);
 navLinks.forEach(link => {
     link.addEventListener('click', closeNav);
 });
+
+var carouselTrack = document.getElementById('carouselTrack');
+if (carouselTrack) {
+    var cards = Array.from(carouselTrack.children);
+    cards.forEach(function (c) { carouselTrack.appendChild(c.cloneNode(true)); });
+
+    var toggle = document.getElementById('carouselToggle');
+    if (toggle) {
+        toggle.addEventListener('click', function () {
+            var paused = carouselTrack.style.animationPlayState === 'paused';
+            carouselTrack.style.animationPlayState = paused ? 'running' : 'paused';
+            toggle.textContent = paused ? '\u23F8' : '\u25B6';
+        });
+    }
+}
