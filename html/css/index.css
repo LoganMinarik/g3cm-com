@@ -225,6 +225,12 @@ section {
     border-color: #58a6ff;
     transform: translateY(-4px);
 }
+.character-card .char-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
 .character-card .img-placeholder {
     width: 100%;
     aspect-ratio: 1 / 1;
