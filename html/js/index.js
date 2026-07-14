@@ -1,3 +1,18 @@
+// Cookie consent banner
+(function() {
+    var banner = document.getElementById('cookieBanner');
+    var acceptBtn = document.getElementById('cookieAccept');
+    if (banner && acceptBtn) {
+        if (!localStorage.getItem('cookieConsent')) {
+            banner.classList.add('show');
+        }
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'true');
+            banner.classList.remove('show');
+        });
+    }
+})();
+
 const hamburger = document.getElementById('hamburger');
 const navPanel = document.getElementById('navPanel');
 const navOverlay = document.getElementById('navOverlay');
