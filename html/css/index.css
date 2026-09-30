@@ -498,6 +498,22 @@ footer {
 .pricing-table tr:last-child td:last-child {
     color: #f0883e;
 }
+.info-block .availability-state {
+    display: none;
+    border-left: 3px solid #58a6ff;
+    padding-left: 12px;
+    margin: 12px 0 16px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #58a6ff;
+}
+.info-block .availability-state.is-visible {
+    display: block;
+}
+.info-block .availability-state.is-closed {
+    border-left-color: #f0883e;
+    color: #f0883e;
+}
 .highlight-box {
     background: #161b22;
     border: 1px solid #f0883e;

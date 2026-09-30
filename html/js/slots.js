@@ -11,6 +11,8 @@
     var openEl = document.querySelector('[data-slot="open"]');
     var statusEl = document.querySelector('[data-slot="status"]');
     var timeEl = document.querySelector('[data-slot="time"]');
+    var stateEl = document.querySelector('[data-slot="state"]');
+    var stateLabelEl = document.querySelector('[data-slot="state-label"]');
 
     if (!filledEl || !totalEl || !openEl) return;
 
@@ -75,6 +77,13 @@
             : 'Live figures, read from our booking sheet.');
         var when = stamp(data.updated) || stamp(data.cachedAt);
         setText(timeEl, when || 'unknown');
+
+        var open = data.total - data.filled;
+        if (stateEl && stateLabelEl) {
+            stateEl.classList.toggle('is-closed', open === 0);
+            stateEl.classList.add('is-visible');
+            setText(stateLabelEl, open === 0 ? 'Closed' : 'Open');
+        }
     }
 
     function showUnavailable(message) {
